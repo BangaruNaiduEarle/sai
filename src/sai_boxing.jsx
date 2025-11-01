@@ -89,7 +89,7 @@ const SAIBoxingDashboard = () => {
           <select
             value={selectedAthlete}
             onChange={(e) => setSelectedAthlete(e.target.value)}
-            className="text-red-800 w-full p-2 border-3 border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-orange-500 text-xl font-semibold bg-gray-50"
+            className="text-red-800 w-full p-2 border-3 border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-orange-500 text-md lg:text-xl font-semibold bg-gray-50"
           >
             {athleteNames.map(name => (
               <option key={name} value={name} >

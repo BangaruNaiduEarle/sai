@@ -27,7 +27,7 @@ import {
   AlertCircle,
   Heart,
   Zap,
-  Trophy 
+  Trophy
 } from 'lucide-react';
 
 import { athletesFullData } from './athletesFullData_23';
@@ -74,8 +74,8 @@ const SAIBoxingDashboard = () => {
             </div>
             <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg">
               {/* <span className="text-orange-600 font-bold text-xs text-center"> */}
-                <Trophy className='text-blue-900 w-10 h-10'  />
-                {/* </span> */}
+              <Trophy className='text-blue-900 w-10 h-10' />
+              {/* </span> */}
             </div>
           </div>
         </div>
@@ -290,7 +290,7 @@ const SAIBoxingDashboard = () => {
               </div>
             )}
 
-            <div className="bg-white rounded-xl shadow-lg p-6 border-t-8 border-orange-500">
+            {/* <div className="bg-white rounded-xl shadow-lg p-6 border-t-8 border-orange-500">
               <h3 className="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-3">
                 <Award className="w-8 h-8 text-orange-500" />
                 Achievements
@@ -300,7 +300,58 @@ const SAIBoxingDashboard = () => {
                   {athleteData.achievements || 'No achievements recorded'}
                 </p>
               </div>
-            </div>
+            </div> */}
+            {/* ===== ACHIEVEMENTS SECTION ===== */}
+            {(athleteData.achievements || athleteData.beforeJoiningAchie) && (
+              <div className="grid grid-cols-1  gap-6">
+                {/* Before Joining Achievements */}
+                {athleteData.beforeJoiningAchie && (
+                  <div className="bg-white rounded-xl shadow-lg p-6 border-t-8 border-blue-900">
+                    <h3 className="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-3">
+                      <Award className="w-8 h-8 text-blue-900" />
+                      Before Joining Achievements
+                    </h3>
+                    <div className="bg-gradient-to-r from-blue-50 to-indigo-100 p-6 rounded-lg border-l-4 border-blue-900">
+                      {Array.isArray(athleteData.beforeJoiningAchie) ? (
+                        <ul className="list-disc pl-5 space-y-2 text-gray-900 text-md leading-relaxed font-medium">
+                          {athleteData.beforeJoiningAchie.map((item, index) => (
+                            <li key={index}>{item}</li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="text-gray-900 text-lg leading-relaxed font-medium">
+                          {athleteData.beforeJoiningAchie || 'No achievements recorded'}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {/* After Joining Achievements */}
+                {athleteData.achievements && (
+                  <div className="bg-white rounded-xl shadow-lg p-6 border-t-8 border-orange-500">
+                    <h3 className="text-2xl font-bold text-blue-900 mb-4 flex items-center gap-3">
+                      <Trophy className="w-8 h-8 text-orange-500" />
+                      After Joining Achievements
+                    </h3>
+                    <div className=" from-orange-100 to-yellow-100 p-6 rounded-lg border-l-4 border-orange-500">
+                      {Array.isArray(athleteData.achievements) ? (
+                        <ul className="list-disc pl-5 space-y-2 text-gray-900 text-md leading-relaxed font-medium">
+                          {athleteData.achievements.map((item, index) => (
+                            <li key={index}>{item}</li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="text-gray-900 text-lg leading-relaxed font-medium">
+                          {athleteData.achievements || 'No achievements recorded'}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white rounded-xl shadow-lg p-6 border-t-8 border-blue-900">

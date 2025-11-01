@@ -158,17 +158,17 @@ const SAIBoxingDashboard = () => {
       </div>
 
       <div className="max-w-7xl mx-auto p-6">
-        <div className="bg-white rounded-xl shadow-lg p-6 mb-6 border-l-8 border-orange-500">
+        <div className="bg-white rounded-xl shadow-lg p-4 mb-6 border-l-8 border-orange-500">
           <label className="block text-lg font-bold text-gray-800 mb-3">
-            SELECT ATHLETE
+            Select Athlete
           </label>
           <select
             value={selectedAthlete}
             onChange={(e) => setSelectedAthlete(e.target.value)}
-            className="w-full p-4 border-3 border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-orange-500 text-xl font-semibold bg-gray-50"
+            className="text-red-800 w-full p-2 border-3 border-gray-300 rounded-lg focus:outline-none focus:ring-4 focus:ring-orange-500 text-xl font-semibold bg-gray-50"
           >
             {athleteNames.map(name => (
-              <option key={name} value={name}>
+              <option key={name} value={name} >
                 {name} - {athletesFullData[name].main.category}
               </option>
             ))}

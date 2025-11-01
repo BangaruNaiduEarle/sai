@@ -110,7 +110,7 @@ const SAIBoxingDashboard = () => {
                   {athleteData.main?.img ? <img src={athleteData.main?.img} alt={athleteData.main?.img} className="object-cover" /> : <User className="w-20 h-20 text-white" />}
                 </div>
               </div>
-              <h2 className="text-3xl font-bold text-center text-blue-900 mb-6 border-b-2 border-gray-200 pb-4">
+              <h2 className="text-xl md:text-3xl font-bold text-center text-blue-900 mb-6 border-b-2 border-gray-200 pb-4">
                 {selectedAthlete}
               </h2>
 

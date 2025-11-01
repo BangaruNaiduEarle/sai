@@ -143,7 +143,7 @@ const SAIBoxingDashboard = () => {
       <div className="bg-blue-900 text-white p-8 shadow-xl">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div>
-            <h1 className="text-4xl font-bold mb-2">Sports Authority of India</h1>
+            <h1 className="text-2xl font-bold mb-2">Sports Authority of India</h1>
             <p className="text-xl text-yellow-300">Boxing Athletes Performance Dashboard - NCOE</p>
           </div>
           <div className="flex gap-4 items-center">

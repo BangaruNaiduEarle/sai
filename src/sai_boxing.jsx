@@ -129,11 +129,19 @@ const SAIBoxingDashboard = () => {
                   <Calendar className="w-6 h-6 text-orange-500" />
                   <span className="font-bold text-lg">DOB:</span>
                   <span className="ml-auto text-lg font-semibold">{athleteData.main?.dob}</span>
-                </div>
+                </div> 
+
+               
+
                 <div className="flex items-center gap-3 text-gray-800 bg-gray-50 p-3 rounded-lg">
                   <Award className="w-6 h-6 text-green-600" />
                   <span className="font-bold text-lg">Scheme:</span>
                   <span className="ml-auto text-lg font-semibold">{athleteData.main?.scheme}</span>
+                </div>
+                 <div className="flex items-center gap-3 text-gray-800 bg-gray-50 p-3 rounded-lg">
+                  <Calendar className="w-6 h-6 text-orange-500" />
+                  <span className="font-bold text-lg">DOJ:</span>
+                  <span className="ml-auto text-lg font-semibold">{athleteData.main?.doj}</span>
                 </div>
                 {athleteData.main?.attendance && (
                   <div className="flex items-center gap-3 text-gray-800 bg-gray-50 p-3 rounded-lg">

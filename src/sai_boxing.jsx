@@ -26,91 +26,13 @@ import {
   Target,
   AlertCircle,
   Heart,
-  Zap
+  Zap,
+  Trophy 
 } from 'lucide-react';
 
 import { athletesFullData } from './athletesFullData_23';
 
 const SAIBoxingDashboard = () => {
-  // const athletesFullData = {
-  //   "Brijesh Tamta": {
-  //     main: { category: "50KG", weight: "52kg", dob: "23-Jun-07", scheme: "KIA", attendance: "44", points: "360", kid: "BOAA491M07", shortTarget: "Elite Men National 2026", longTarget: "Olympics 2036" },
-  //     sc: { clean: "60", squat: "90", bench: "60", pullups: "AB", dips: "AB", sprint10: "AB", sprint20: "AB", sprint30: "AB", sprint150: "AB" },
-  //     physio: { vo2max: "53.9", maxPower: "10.1", avgPower: "7.9", fatigue: "49.4", remarks: "Optimal physiological performance" },
-  //     achievements: "SILVER MEDAL 6TH YOUTH NATIONAL. ASBC ASIAN U-22 GOLD. ADRIATIC PEARL WORLD CUP GOLD",
-  //     coachRemarks: "Prominent boxer with strong technical and tactical skills. Excellent willpower and endurance.",
-  //     psychology: "Excellent confidence, motivation, focus. Very strong mentally for sports.",
-  //     physiotherapy: "History of LBP L4-L5 disc bulging. Injury resolved, successful RTP.",
-  //     nutrition: "Good in all nutrition parameters. Balanced meals, portion control, adequate hydration.",
-  //     doctor: "Clinically fit"
-  //   },
-  //   "K. Tanish": {
-  //     main: { category: "50KG", weight: "52kg", dob: "4-Aug-08", scheme: "NCOE", attendance: "108", points: "15", kid: "BOAA632M08", shortTarget: "Youth National 2026", longTarget: "Elite National Medal" },
-  //     sc: { clean: "45", squat: "80", bench: "50", pullups: "7", dips: "10", sprint10: "1.7", sprint20: "3.03", sprint30: "4.32", sprint150: "AB" },
-  //     physio: { vo2max: "52.1", maxPower: "9.8", avgPower: "7.8", fatigue: "41.9", remarks: "Optimal physiological performance" },
-  //     achievements: "Silver REC Open Talent Hunt. Participated SGFI Games Delhi",
-  //     coachRemarks: "Technically sound but needs improvement in tactical skills.",
-  //     psychology: "Very good confidence, motivation, focus. Stays positive and calm under pressure.",
-  //     physiotherapy: "History of Right metacarpal fracture with elbow cellulitis. Successful RTP",
-  //     nutrition: "After injury gained weight. Suggested weight loss program.",
-  //     doctor: "H/O 5th MCP Sprain (right)"
-  //   },
-  //   "Santosh Mehto": {
-  //     main: { category: "50KG", weight: "52.3", dob: "3-Jan-08", scheme: "NCOE", attendance: "138", points: "15", kid: "BOAA616M08", shortTarget: "Youth National 2026", longTarget: "Elite National Medal" },
-  //     sc: { clean: "62", squat: "51", bench: "50", pullups: "16", dips: "22", sprint10: "1.73", sprint20: "3.07", sprint30: "4.34", sprint150: "34.56" },
-  //     physio: { vo2max: "54.5", maxPower: "10.2", avgPower: "8.6", fatigue: "52.1", remarks: "Optimal physiological performance" },
-  //     achievements: "Bronze REC Open Talent Hunt. Participated SGFI Games",
-  //     coachRemarks: "Technically sound but needs improvement in tactical skills.",
-  //     psychology: "Good confidence, motivation, focus. Can handle pressure well.",
-  //     physiotherapy: "Right metacarpal fracture. POP cast 4 weeks. Successful RTP",
-  //     nutrition: "Improve muscle mass. High-fiber, high-protein foods.",
-  //     doctor: "H/O Lt. 5th MC"
-  //   },
-  //   "Lalnunpuia": {
-  //     main: { category: "65KG", weight: "66.5", dob: "2-Feb-07", scheme: "NCOE", attendance: "", points: "160", kid: "BOAA446M07", shortTarget: "ELITE STATE", longTarget: "Elite Men National" },
-  //     sc: { clean: "70", squat: "100", bench: "80", pullups: "32", dips: "42", sprint10: "1.68", sprint20: "2.95", sprint30: "4.18", sprint150: "34.52" },
-  //     physio: { vo2max: "55.2", maxPower: "12.4", avgPower: "9.6", fatigue: "51.6", remarks: "Optimal physiological performance" },
-  //     achievements: "2023 junior national gold. Junior asian participate. REC northern gold. REC youth Gold",
-  //     coachRemarks: "Skilled boxer with strong technical and tactical abilities. Good learning capacity.",
-  //     psychology: "Good confidence, focus, mental control. Needs work on stress management.",
-  //     physiotherapy: "No major injury",
-  //     nutrition: "Excellent in all nutritional parameters",
-  //     doctor: "Clinically fit"
-  //   },
-  //   "Sarthi Saini": {
-  //     main: { category: "70KG", weight: "71.1", dob: "30-Oct-07", scheme: "NCOE", attendance: "", points: "120", kid: "BOAA129M07", shortTarget: "Elite National Medal", longTarget: "International Medal" },
-  //     sc: { clean: "75", squat: "110", bench: "70", pullups: "13", dips: "10", sprint10: "1.57", sprint20: "2.78", sprint30: "3.92", sprint150: "35.93" },
-  //     physio: { vo2max: "55.6", maxPower: "11.7", avgPower: "8.6", fatigue: "65.9", remarks: "Optimal performance, focus on recovery" },
-  //     achievements: "Best Boxer & Gold 6th Youth National. U-19 Asian Championship Thailand. Bronze REC Open",
-  //     coachRemarks: "Talented athlete with good technical and tactical skills. Recently best boxer award.",
-  //     psychology: "Excellent confidence, motivation, mental control. Positive and focused.",
-  //     physiotherapy: "No major injury",
-  //     nutrition: "Good in all parameters. Advised to improve muscle mass.",
-  //     doctor: "Clinically fit"
-  //   },
-  //   "GAURAV": {
-  //     main: { category: "85KG", weight: "86.7", dob: "27.11.2007", scheme: "NCOE", attendance: "", points: "", kid: "BOAA857M07", shortTarget: "Elite National Medal", longTarget: "International Medal" },
-  //     sc: { clean: "70", squat: "100", bench: "70", pullups: "13", dips: "19", sprint10: "1.69", sprint20: "3.01", sprint30: "4.29", sprint150: "AB" },
-  //     physio: { vo2max: "49.5", maxPower: "13.2", avgPower: "9.5", fatigue: "61.2", remarks: "Optimal performance, focus on recovery" },
-  //     achievements: "Gold 6th Youth National. Participated U-19 Asian Championship Thailand",
-  //     coachRemarks: "Recently joined. Good technique and tactical skill. Strong learning ability.",
-  //     psychology: "Good confidence, motivation, mental control. Needs work on stress management.",
-  //     physiotherapy: "No major injury",
-  //     nutrition: "Good in all parameters according to weight category",
-  //     doctor: "Clinically fit"
-  //   },
-  //   "Vedant Dhauta": {
-  //     main: { category: "90KG", weight: "90.1kg", dob: "7-Sep-07", scheme: "NCOE", attendance: "", points: "130", kid: "BOAA492M07", shortTarget: "Elite National Medal", longTarget: "International Participate" },
-  //     sc: { clean: "70", squat: "90", bench: "80", pullups: "9", dips: "10", sprint10: "1.83", sprint20: "3.21", sprint30: "4.54", sprint150: "37.7" },
-  //     physio: { vo2max: "43.8", maxPower: "9.6", avgPower: "7.7", fatigue: "42.8", remarks: "Need to improve Aerobic capacity/Endurance" },
-  //     achievements: "Bronze 6th Youth National. Junior National 2023 silver. REC northern silver. Combined REC silver",
-  //     coachRemarks: "Good psychological strength but technical skills below expected standard.",
-  //     psychology: "Very good confidence, motivation, control. Stays calm and positive.",
-  //     physiotherapy: "No major injury",
-  //     nutrition: "Good in all parameters according to weight category",
-  //     doctor: "Clinically fit"
-  //   }
-  // };
 
   const athleteNames = Object.keys(athletesFullData);
   const [selectedAthlete, setSelectedAthlete] = useState(athleteNames[0]);
@@ -143,15 +65,17 @@ const SAIBoxingDashboard = () => {
       <div className="bg-blue-900 text-white p-8 shadow-xl">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div>
-            <h1 className="text-2xl font-bold mb-2">Sports Authority of India</h1>
-            <p className="text-xl text-yellow-300">Boxing Athletes Performance Dashboard - NCOE</p>
+            <h1 className="text-xl lg:text-3xl font-bold mb-2">Sports Authority of India</h1>
+            <p className="text-base lg:text-xl text-yellow-300">Boxing Athletes Performance Dashboard - NCOE</p>
           </div>
-          <div className="flex gap-4 items-center">
+          <div className="hidden lg:flex gap-4 items-center">
             <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg">
-              <span className="text-blue-900 font-bold text-lg">SAI</span>
+              <span className="text-blue-900 font-bold text-2xl">SAI</span>
             </div>
             <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg">
-              <span className="text-orange-600 font-bold text-xs text-center">Khelo India</span>
+              {/* <span className="text-orange-600 font-bold text-xs text-center"> */}
+                <Trophy className='text-blue-900 w-10 h-10'  />
+                {/* </span> */}
             </div>
           </div>
         </div>
@@ -173,7 +97,7 @@ const SAIBoxingDashboard = () => {
               </option>
             ))}
           </select>
-        </div>77
+        </div>
 
         {/* Athlete Info + Charts */}
         {/* (same content as before, truncated for brevity — all charts, cards, sections remain identical) */}
@@ -181,10 +105,10 @@ const SAIBoxingDashboard = () => {
           <div className="lg:col-span-1 space-y-6">
             <div className="bg-white rounded-xl shadow-lg p-8 border-t-8 border-orange-500">
               <div className="flex items-center justify-center mb-6">
-                <div className="w-36 h-36 bg-gradient-to-br from-blue-900 to-blue-600 rounded-full flex items-center justify-center shadow-xl">
+                <div className="w-36 h-36  from-blue-900 to-blue-600 rounded-full flex items-center justify-center shadow-xl mb-4">
                   {/* <User className="w-20 h-20 text-white" /> */}
-                  { athleteData.main?.img ? <img src ={athleteData.main?.img}  alt={athleteData.main?.img} className="object-cover"  /> : <User className="w-20 h-20 text-white" /> }
-                   </div>
+                  {athleteData.main?.img ? <img src={athleteData.main?.img} alt={athleteData.main?.img} className="object-cover" /> : <User className="w-20 h-20 text-white" />}
+                </div>
               </div>
               <h2 className="text-3xl font-bold text-center text-blue-900 mb-6 border-b-2 border-gray-200 pb-4">
                 {selectedAthlete}

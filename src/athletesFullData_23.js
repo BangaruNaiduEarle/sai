@@ -859,7 +859,7 @@ import anujSingh from "./assets/Anuj_Singh_Mahar.png";
 import divyam from "./assets/Divyam_Dalal.png";
 import gaurav from "./assets/GAURAV.png";
 import gayki from "./assets/Gayki_Rie.png";
-import jatin from "./assets/jatin.png";
+import jatin from "./assets/Jatin.png";
 import lalnunpuia from "./assets/Lalnunpuia.png";
 import lomaRiang from "./assets/Loma_Riang.png";
 import nMurthy from "./assets/N_Dakshina_Murty.png";

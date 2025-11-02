@@ -1202,8 +1202,7 @@ export const athletesFullData =
     physio: { vo2max: "46.5", maxPower: "10.4", avgPower: "8.5", fatigue: "61.8", remarks: "Need to work on Aerobic capacity and focus on recovery" },
 
     achievements: [
-      "REC OPEN TALENT HUNT SILVER MEDAL 2024",
-      "REC COMBINED NATIONAL BRONZE MEDAL 2024"
+      "NIL"
     ],
     coachRemarks: "Saksham is recently joined the NCOE he has the ability to perform well in upcoming youth Competitions. . He has good technical skills and psychological aspects are also good. He is working on his tactical skills.",
     psychology: "Saksham has good motivation, mental control, and focus, but he needs to work on confidence, attention, and managing stress (negative energy).",

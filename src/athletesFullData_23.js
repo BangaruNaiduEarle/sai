@@ -1087,17 +1087,7 @@ export const athletesFullData =
       "Participated in the National Champiionship, ARU, 2023"
     ]
   },
-  "Loma Riang": {
-    main: { category: "55KG", weight: "", dob: "9-Jul-08", scheme: "NCOE", attendance: "", points: "50", kid: "BOAA018M08", shortTarget: "Youth National Medal 2026", longTarget: "ASIAN CHAMPIONSHIP 2027", img: lomaRiang },
-    sc: { clean: "106", squat: "64", bench: "60", pullups: "15", dips: "26", sprint10: "1.56", sprint20: "2.83", sprint30: "4.03", sprint150: "34.87" },
-    physio: { vo2max: "48.8", maxPower: "11.3", avgPower: "8.8", fatigue: "62.4", remarks: "Need to work on Aerobic capacity and focus on recovery" },
-    achievements: "Gold REC Open Talent Hunt. Gold REC Combined National Talent Hunt",
-    coachRemarks: "Long Absent",
-    psychology: "Average confidence and motivation. Sometimes loses focus under pressure.",
-    physiotherapy: "No major injury Reported",
-    nutrition: "Good nutritional status. Dietary intake balanced, supporting training and recovery effectively",
-    doctor: "Clinically fit"
-  },
+ 
   "Loma Riang": {
     main: {
       category: "55KG", weight: "", dob: "9-Jul-2008",

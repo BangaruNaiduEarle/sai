@@ -1203,7 +1203,7 @@ export const athletesFullData =
 
   "Saksham": {
     main: {
-      category: "55KG", weight: "56", dob: "",
+      category: "55KG", weight: "56", dob: "09/02/2008",
       scheme: "NCOE", attendance: "61", points: "NIL", kid: "BOAA865M08",
       shortTarget: "Youth National Particpation 2026", longTarget: "Elite National Medal",
       img: saksham, doj: "21.07.2025"
@@ -1383,17 +1383,7 @@ export const athletesFullData =
       "No Performance"
     ]
   },
-  "Sarthi Saini": {
-    main: { category: "70KG", weight: "71.1", dob: "30-Oct-07", scheme: "NCOE", attendance: "", points: "120", kid: "BOAA129M07", shortTarget: "Elite National Medal", longTarget: "International Medal", img: sarthi },
-    sc: { clean: "75", squat: "110", bench: "70", pullups: "13", dips: "10", sprint10: "1.57", sprint20: "2.78", sprint30: "3.92", sprint150: "35.93" },
-    physio: { vo2max: "55.6", maxPower: "11.7", avgPower: "8.6", fatigue: "65.9", remarks: "Optimal performance, focus on recovery" },
-    achievements: "Best Boxer & Gold 6th Youth National. U-19 Asian Championship Thailand. Bronze REC Open. Silver REC TALENT HUNT",
-    coachRemarks: "Talented athlete with good technical and tactical skills. Recently best boxer award. Expected to perform well in elite.",
-    psychology: "Excellent confidence, motivation, mental control. Positive and focused. Can work on attention control and reducing stress.",
-    physiotherapy: "No major injury Reported",
-    nutrition: "Good in all parameters. Advised to improve muscle mass.",
-    doctor: "Clinically fit"
-  },
+
   "Sarthi_Saini": {
     main: {
       category: "70KG", weight: "71.1", dob: "30-Oct-2007",
@@ -1447,23 +1437,13 @@ export const athletesFullData =
       "5TH JUNIOR NATIONAL - PARTICIPATED"
     ]
   },
-  "Shubheep Singh": {
-    main: { category: "75kg", weight: "77.5", dob: "10.11.2007", scheme: "NCOE", attendance: "", points: "", kid: "BOAA423M07", shortTarget: "Elite National Medal", longTarget: "International Medal", img: shubheep },
-    sc: { clean: "80", squat: "90", bench: "80", pullups: "AB", dips: "AB", sprint10: "AB", sprint20: "AB", sprint30: "AB", sprint150: "AB" },
-    physio: { vo2max: "Recently Joined", maxPower: "Recently Joined", avgPower: "Recently Joined", fatigue: "Recently Joined", remarks: "Nil" },
-    achievements: "Bronze Medal 6th Youth Men National Boxing Championship UP 2025",
-    coachRemarks: "Recently joined NCOE. Good technique and tactical skill. Strong learning ability and adaptability. Expected to perform well in Elite.",
-    psychology: "Excellent confidence, focus, motivation, mental control. Very strong mentally for sports. Positive, balanced, consistent performance.",
-    physiotherapy: "No major injury Reported",
-    nutrition: "Suggested for weight management. Focus on high-fiber, high-protein foods to preserve muscle mass.",
-    doctor: "Clinically fit"
-  },
+
   "Shubheep Singh": {
     main: {
       category: "75kg", weight: "77.5", dob: "10.11.2007",
       scheme: "NCOE", attendance: "29", points: "NIL", kid: "BOAA423M07",
       shortTarget: "Elite National Medal", longTarget: "International Medal",
-      img: shubheep, doj: "",
+      img: shubheep, doj: "25.09.2025",
     },
     sc: { clean: "80", squat: "90", bench: "80", pullups: "AB", dips: "AB", sprint10: "AB", sprint20: "AB", sprint30: "AB", sprint150: "AB" },
     physio: { vo2max: "Recently Joined", maxPower: "Recently Joined", avgPower: "Recently Joined", fatigue: "Recently Joined", remarks: "Nil" },
